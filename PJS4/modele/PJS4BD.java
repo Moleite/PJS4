@@ -128,7 +128,7 @@ public class PJS4BD {
 						System.out.print("DureeReservation : " + rs.getString("DureeReservation") + " ");
 						System.out.println();
 					break;	
-				}	
+				}
 			}
 			
 		} catch (MySQLSyntaxErrorException e) {

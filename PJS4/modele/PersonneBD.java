@@ -13,8 +13,8 @@ public class PersonneBD extends PJS4BD{
 		sql(requete);
 	}
 
-	public static boolean verifCompte(String nom, String mdp) {
-		String requete = "SELECT * FROM personne WHERE NomPers = '" + nom + "' AND Mdp = '" + mdp + "'";
+	public static boolean verifCompte(String pseudo, String mdp) {
+		String requete = "SELECT * FROM personne WHERE Pseudo = '" + pseudo + "' AND Mdp = '" + mdp + "'";
 		
 		try {
 			// Etape 1 : Chargement du driver
@@ -38,7 +38,7 @@ public class PersonneBD extends PJS4BD{
 			}
 			
 		} catch (MySQLSyntaxErrorException e) {
-			System.out.print("Cette table n'existe pas dans la BDD.");
+			System.out.print("Erreur de syntaxe SQL");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
