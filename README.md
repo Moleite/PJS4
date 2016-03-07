@@ -5,19 +5,19 @@ Serveur Wamp + BDD MySql + HeidiSQL : https://drive.google.com/open?id=0B2jx_Fen
 #___
 Appli Java : Java
 ___
-•	Connexion
+•	Connexion ✔
 
-•	Inscription
+•	Inscription ✔
 
 •	Réservation orange
 
 •	Réservation rouge
 
-•	Servlet Serveur/Client
+•	Servlet Serveur/Client ✔
 
 •	Timer Refresh Liste Salle (gestion refresh la nuit)
 
-•	Lié à la BDD MySql
+•	Lié à la BDD MySql ✔
 #___
 Base de Données : SQL
 ___
