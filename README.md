@@ -23,53 +23,53 @@ Base de Données : SQL
 ___
 •	Personnes :
 ___
-o	IdPersonne
+IdPersonne
 
-o	Nom
+Nom
 
-o	Prenom
+Prenom
 
-o	Pseudo
+Pseudo
 
-o	Mdp
+Mdp
 
-o	Bool Droit (Super Réserveur)
+Bool Droit (Super Réserveur)
 
-o	CréneauxRéservés  < 7 / jour
+CréneauxRéservés  < 7 / jour
 #___
 •	Salles :
 ___
-o	IdSalle
+IdSalle
 
-o	NumSalle
+NumSalle
 
-o	Etage
+Etage
 
-o	NbPlace
+NbPlace
 
-o	Bool SalleEstReserv
+Bool SalleEstReserv
 
-o	Taille écran
+Taille écran
 
-o	Performances
+Performances
 #___
 •	Réservation :
 ___
-o	Etrang IdPersonne
+Etrang IdPersonne
 
-o	Etrang IdSalle
+Etrang IdSalle
 
-o	Créneau
+Créneau
 
-o	Jour
+Jour
 #___
 •	Créneaux :
 ___
-o	IdCréneau
+IdCréneau
 
-o	HeureDebut
+HeureDebut
 
-o	HeureFin
+HeureFin
 #___
 Site Web : HTML – JEE – JSP
 ___
