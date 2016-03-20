@@ -3,7 +3,7 @@ PJS4 OklmRoom [OKRM]
 
 Serveur Wamp + BDD MySql + HeidiSQL : https://drive.google.com/open?id=0B2jx_FennHRJdTRqZk0xaGNCM3c
 #___
-Appli Java : Java
+Appli Java : Java (Momo et Veusty)
 ___
 •	Connexion ✔
 
@@ -71,7 +71,7 @@ HeureDebut
 
 HeureFin
 #___
-Site Web : HTML – JEE – JSP
+Site Web : HTML – JEE – JSP (Jules Nicolol)
 ___
 •	Page Connexion
 
@@ -81,7 +81,7 @@ ___
 
 •	Page Planning par salle + réservation futur
 #___
-Appli Android :
+Appli Android : (Anis JJ Massine)
 ___
 •	Page Connexion
 
