@@ -55,7 +55,7 @@ string NameBlock (foreign Key Block(Name))
 ___
 int IdRoom
 
-int NbRoom
+string NbRoom
 
 int NbSeat
 
@@ -63,11 +63,11 @@ int NbSeatLeft
 
 Bool Reserved
 
-float Screen
+string Screen
 
 string Processor
 
-int Ram
+string Ram
 
 int FloorId (foreign Key Floor(IdFloor))
 #___
