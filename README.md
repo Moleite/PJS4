@@ -94,6 +94,10 @@ time End
 STRUCTURE Site Web : HTML – JSP (Jules Nicolol)
 ___
 #___
+•	login :
+___
+signIn.jsp (choisir la date)
+#___
 •	user :
 ___
 promoteUser.jsp
