@@ -51,7 +51,9 @@ Bool SalleEstReserv
 
 Taille écran
 
-Performances
+Processeur
+
+RAM
 #___
 •	Réservation :
 ___
