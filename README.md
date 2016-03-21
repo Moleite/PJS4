@@ -3,7 +3,7 @@ PJS4 OklmRoom [OKRM]
 
 Serveur Wamp + BDD MySql + HeidiSQL : https://drive.google.com/open?id=0B2jx_FennHRJdTRqZk0xaGNCM3c
 #___
-Appli Java : Java (Momo et Veusty)
+Appli Java : Java - JEE (Momo et Veusty)
 ___
 •	Connexion ✔
 
@@ -19,7 +19,7 @@ ___
 
 •	Lié à la BDD MySql ✔
 #___
-Base de Données : SQL
+STRUCTURE Base de Données : SQL
 ___
 •	Users :
 ___
@@ -59,6 +59,8 @@ int NbRoom
 
 int NbSeat
 
+int NbSeatLeft
+
 Bool Reserved
 
 float Screen
@@ -89,26 +91,37 @@ time Start
 
 time End
 #___
-Site Web : HTML – JEE – JSP (Jules Nicolol)
+STRUCTURE Site Web : HTML – JSP (Jules Nicolol)
 ___
-•	Page Connexion
-
-•	Page Inscription
-
-•	Page Réservation rapide
-
-•	Page Planning par salle + réservation futur
+#___
+•	user :
+___
+promoteUser.jsp
+signUp.jsp
+dashboard.jsp
+listReservation.jsp
+#___
+•	index :
+___
+index.jsp
+#___
+•	reservation :
+___
+listRooms.jsp (choisir la date)
+#___
+• includes :
+___
+header.jsp
+footer.jsp
+#___
+• error :
+___
+404.jsp
+500.jsp
 #___
 Appli Android : (Anis JJ Massine)
 ___
-•	Page Connexion
 
-•	Page Inscription
-
-•	Page Liste salle + Réservation rapide
-
-•	Page Réservations du compte connecté
-
-•	Page Planning par salle + réservation futur
+•	Page Planning par salle A DEFINIR
 
 /!\ BASE DE DONNEE SQL
