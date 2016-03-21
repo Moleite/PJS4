@@ -29,7 +29,7 @@ string Lastname
 
 string Firstname
 
-string Nickname
+string Pseudo
 
 string Password
 
