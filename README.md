@@ -33,7 +33,7 @@ string Pseudo
 
 string Password
 
-int Right (1:élèves - 2:prof - 3:admin)
+string Right (1:élèves - 2:prof - 3:admin)
 
 int Reservations  (< 7 / jour)
 #___
