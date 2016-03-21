@@ -21,57 +21,73 @@ ___
 #___
 Base de Données : SQL
 ___
-•	Personnes :
+•	Users :
 ___
-IdPersonne
+int IdUser
 
-Nom
+string Lastname
 
-Prenom
+string Firstname
 
-Pseudo
+string Nickname
 
-Mdp
+string Password
 
-Bool Droit (Super Réserveur)
+bool Right (Super Réserveur)
 
-CréneauxRéservés  < 7 / jour
+int Reservations  (< 7 / jour)
 #___
-•	Salles :
+•	Blocks :
 ___
-IdSalle
+int IdBlock
 
-NumSalle
+string Name
 
-Etage
-
-NbPlace
-
-Bool SalleEstReserv
-
-Taille écran
-
-Processeur
-
-RAM
 #___
-•	Réservation :
+•	Floors :
 ___
-Etrang IdPersonne
+int IdFloor
 
-Etrang IdSalle
+string NameBlock (foreign Key Block(Name))
 
-Créneau
-
-Jour
 #___
-•	Créneaux :
+•	Rooms :
 ___
-IdCréneau
+int IdRoom
 
-HeureDebut
+int NbRoom
 
-HeureFin
+int NbSeat
+
+Bool Reserved
+
+float Screen
+
+string Processor
+
+int Ram
+
+int FloorId (foreign Key Floor(IdFloor))
+#___
+•	Reservations :
+___
+int IdReservation
+
+int UserId (foreign Key User(IdUser))
+
+int RoomId (foreign Key Room(IdRoom))
+
+int SlotId (foreign Key Slot(IdSlot))
+
+date Day
+#___
+•	Slots :
+___
+int IdSlot
+
+time Start
+
+time End
 #___
 Site Web : HTML – JEE – JSP (Jules Nicolol)
 ___
