@@ -102,7 +102,7 @@ signUp.jsp
 
 dashboard.jsp
 
-listReservation.jsp
+listReservations.jsp
 #___
 •	index :
 ___
