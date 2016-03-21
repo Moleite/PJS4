@@ -97,8 +97,11 @@ ___
 •	user :
 ___
 promoteUser.jsp
+
 signUp.jsp
+
 dashboard.jsp
+
 listReservation.jsp
 #___
 •	index :
@@ -112,11 +115,13 @@ listRooms.jsp (choisir la date)
 • includes :
 ___
 header.jsp
+
 footer.jsp
 #___
 • error :
 ___
 404.jsp
+
 500.jsp
 #___
 Appli Android : (Anis JJ Massine)
