@@ -89,16 +89,6 @@ time Start
 
 time End
 #___
-•	Planning :
-___
-int nbSeatLeft
-
-date Date
-
-int RoomId (foreign Key Room(IdRoom))
-
-int SlotId (foreign Key Slot(IdSlot))
-#___
 STRUCTURE Site Web : HTML – JSP (Jules Nicolol)
 ___
 #___
