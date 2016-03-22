@@ -134,6 +134,8 @@ ___
 
 •	"lister" => "listRooms"
 
+•	choice DEVIENT SOIT choiceRoom SOIT choiceSlot !
+
 •	Page Planning par salle A DEFINIR
 ___
 #___
