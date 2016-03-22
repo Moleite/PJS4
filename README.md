@@ -128,6 +128,12 @@ ___
 
 500.jsp
 #___
+•	"commande" => "reserve"
+
+•	"annuler" => "cancel"
+
+•	"lister" => "listRooms"
+
 •	Page Planning par salle A DEFINIR
 ___
 #___
