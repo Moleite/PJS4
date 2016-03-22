@@ -2,7 +2,7 @@ package model;
 
 import java.util.List;
 
-import exception.IntrouvableException;
+import exception.UserNotFoundException;
 import persistence.*;
 
 
@@ -14,63 +14,63 @@ public class Dispatcher {
 	private static Dispatcher instance = new Dispatcher();
 	private static UserDAO compteDao = UserDAO.getInstance();
 	private static ReservationDAO reservationDao = ReservationDAO.getInstance();
-	private static VolDAO volDao = VolDAO.getInstance();
+	private static RoomDAO volDao = RoomDAO.getInstance();
 
 	/**
-	 * Récupérer un compte à partir de son login et de son mot de passe
+	 * Récupérer un utilisateur à partir de son pseudo et de son mot de passe
 	 * 
-	 * @param login Login supposé du compte
-	 * @param mdp Mot de passe supposé du compte
+	 * @param pseudo Login supposé du compte
+	 * @param password Mot de passe supposé du compte
 	 * @return le compte correspondant aux paramètres
-	 * @throws CompteIntrouvableException si aucun voyageur ne possède cette combinaison
+	 * @throws UserNotFoundException si aucun utilisateur ne possède cette combinaison
 	 */
-	public User getCompte(String login, String mdp)
-		 throws CompteIntrouvableException{
-		User compte = compteDao.findUser(login, mdp);
-		return compte;
+	public User getUser(String pseudo, String password)
+		 throws  UserNotFoundException{
+		User user = compteDao.findUser(pseudo, password);
+		return user;
 	}
 	
 	/**
 	 * Récupérer une réservation à partir de son numéro unique
 	 * 
-	 * @param numeroReservation Numéro unique de la réservation
+	 * @param nbReservation Numéro de la réservation
 	 * @return la réservation correspondante au numéro
-	 * @throws IntrouvableException si la réservation ou ses différentes composantes (vol, compte) sont introuvables
+	 * @throws NotFoundException si la réservation ou ses différentes composantes (salle, utilisateur) sont introuvables
 	 */
-	public Reservation getReservation(int numeroReservation) throws IntrouvableException {
-		return reservationDao.trouverReservation(numeroReservation);
+	public Reservation getReservation(int nbReservation) throws NotFoundException {
+		return reservationDao.trouverReservation(nbReservation);
 	}
 	
 	/**
-	 * Récupérer l'ensemble des réservation d'un compte
+	 * Récupérer l'ensemble des réservation d'un utilisateur
 	 * 
-	 * @param compte le compte dont on recherche les réservation
+	 * @param user l'utilisateur dont on recherche les réservation
 	 * @return une liste de réservation
 	 */
-	public List<Reservation> getReservations(User compte) {
-		return reservationDao.recupererReservations(compte);
+	public List<Reservation> getReservations(User user) {
+		return reservationDao.recupererReservations(user);
 	}
 	
 	/**
-	 * Récupérer un vol à partir de son numéro unique
+	 * Récupérer une salle à partir de son numéro 
 	 * 
-	 * @param numeroVol le numéro du vol
-	 * @return le vol correspondant
+	 * @param nbRoom le numéro du la salle
+	 * @return la salle correspondante
 	 * @throws IntrouvableException si le vol correspondant est introuvable
 	 */
-	public Room getVol(int numeroVol) throws IntrouvableException {
-		return volDao.trouverVol(numeroVol);
+	public Room getRoom(int nbRoom) throws IntrouvableException {
+		return volDao.findRoom(nbRoom);
 	}
 	
 	/**
 	 * Récupérer un un vol à partir d'une réservation
 	 * 
-	 * @param reserv la réservation dont on recherche le vol
-	 * @return le vol correspondant à la réservation
+	 * @param reservation la réservation dont on recherche le vol
+	 * @return la salle correspondante à la réservation
 	 * @throws IntrouvableException si le vol 
 	 */
-	public Room getVol(Reservation reserv) throws IntrouvableException {
-		return volDao.trouverVol(reserv);
+	public Room getRoom(Reservation reservation) throws IntrouvableException {
+		return volDao.findRoom(reservation);
 	}
 	
 	/**
@@ -114,7 +114,7 @@ public class Dispatcher {
 	 */
 	public Room ajouterVol(String destination, String dateDebut, int nombrePlaces, float prix) {
 		Room vol = new Room(5, destination, dateDebut, nombrePlaces, prix);
-		volDao.ajouterVol(destination, dateDebut, nombrePlaces, prix);
+		volDao.addRoom(destination, dateDebut, nombrePlaces, prix);
 		return vol;
 	}
 	
