@@ -59,8 +59,6 @@ string NbRoom
 
 int NbSeat
 
-int NbSeatLeft
-
 Bool Reserved
 
 string Screen
@@ -90,6 +88,16 @@ int IdSlot
 time Start
 
 time End
+#___
+•	Planning :
+___
+int nbSeatLeft
+
+date Date
+
+int RoomId (foreign Key Room(IdRoom))
+
+int SlotId (foreign Key Slot(IdSlot))
 #___
 STRUCTURE Site Web : HTML – JSP (Jules Nicolol)
 ___
