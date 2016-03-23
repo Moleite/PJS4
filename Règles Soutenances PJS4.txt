@@ -1,0 +1,39 @@
+PJS4 Soutenance
+
+
+DOSSIER :
+
+1. remerciments
+2. Introduction : 1 page max (de quoi il s'ajit)
+3. corps du dévelopement 
+	I. cahier des charges :
+		-  pourquoi on a fait ça ?
+		-  les langages utilisés et pourquoi
+		-  les logiciels utilisés et pourquoi
+		-  la  justification de la répartition des taches  
+		-  la division du temps
+	II. réalisation du taff
+	III. résultats et test
+4. Conclusion (Perspective, suggestion)
+5. Glossaire si on a use des "mots barbres" ou bien les asterisques
+6. annexes :
+	- Code
+	- Abstract (résumés en Anglais).
+
+Typographie: 
+	- Page aérée
+	- Une idées par paragraphe
+	- Taille de police 11
+	- Interligne 1,15 ou  1,25 (on verra)
+	- Eviter les polices trop originales
+	- Phrase courtes, belek au traiage car y'aura pas que des infos qui vont nous lire mais trari quand même :D.
+
+SOUTENANCE :
+
+Ne pas se balancer, ne pas se touché les cheveux la base quoi.
+
+POWER POINT :
+
+1. Autant de diapo qu'il le faut
+2. Eviter les diapo trop chargée
+3. Attention aux couleurs, (Ex:  pas d'écriture claire sur un fond clair)
