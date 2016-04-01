@@ -77,7 +77,9 @@ int UserId (foreign Key User(IdUser))
 
 int RoomId (foreign Key Room(IdRoom))
 
-int SlotId (foreign Key Slot(IdSlot))
+time hourStart
+
+time hourEnd
 
 date Day
 #___
